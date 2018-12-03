@@ -1,16 +1,9 @@
 
+/* Type Selectors */
+
 body {
   color: #878787;
   margin: 0;
-}
-
-.main-header {
-  background-color: orange;
-}
-
-.title {
-  color: white;
-  font-size: 26px;
 }
 
 ol li {
@@ -31,6 +24,17 @@ h2 {
 h3 {
   font-size: 20px;
   color: #48525c;
+}
+
+/* Class Selectors */
+
+.main-header {
+  background-color: orange;
+}
+
+.title {
+  color: white;
+  font-size: 26px;
 }
 
 .primary-content {
@@ -61,6 +65,8 @@ a:active {
   color: white;
   background-color: orange;
 }
+
+/* ID selectors */
 
 #main-footer {
   padding-top: 60px;
