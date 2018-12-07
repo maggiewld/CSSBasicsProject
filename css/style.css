@@ -7,7 +7,7 @@ body {
   font: 1em/1.15 "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* font property to combine weight, size, line height, font stack.
   font stack: backup fonts for when user doesn't have a font installed.
-  line height: unitless value, proportional to font size. 1.5x font size. */ 
+  line height: unitless value, proportional to font size. 1.5x font size. */
 }
 
 ol li {
@@ -57,6 +57,16 @@ h3 {
 
 .t-border {
   border-top: 2px solid lightgrey;
+}
+
+.wildlife {
+  color: white;
+  background-color: #434a52;
+
+  padding: 18% 24%; 
+  /* padding: top/bottom, left/right;
+  padding: top, left/right, bottom;
+  padding: top, right, bottom, left */
 }
 
 /* Pseudo-class Selectors */
