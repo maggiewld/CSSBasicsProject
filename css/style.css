@@ -4,6 +4,7 @@
 body {
   color: #878787;
   margin: 0;
+  font-size: 1em;
 }
 
 ol li {
@@ -13,7 +14,7 @@ ol li {
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 5.625em; /* 90px/16px */
   color: white;
 }
 
@@ -34,7 +35,12 @@ h3 {
 
 .title {
   color: white;
-  font-size: 26px;
+  font-size: 1.625em; /* to work out how many 'em' from px, divide value by relative font size, here is based on body size 1em(/default 16px) 26px/16px */
+}
+
+.primary-content,
+.secondary-content {
+  width: 60%;
 }
 
 .primary-content {
@@ -45,6 +51,7 @@ h3 {
   border-top: 2px solid lightgrey;
 }
 
+/* Pseudo-class Selectors */
 a:link {
   color: orange;
 }
