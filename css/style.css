@@ -4,8 +4,10 @@
 body {
   color: #878787;
   margin: 0;
-  font-size: 1em; /* 16px */
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* font stack, backup fonts for when user doesn't have a font installed. */
+  font: 1em/1.15 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font property to combine weight, size, line height, font stack.
+  font stack: backup fonts for when user doesn't have a font installed.
+  line height: unitless value, proportional to font size. 1.5x font size. */ 
 }
 
 ol li {
@@ -19,6 +21,7 @@ h1 {
   color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
   font-weight: normal;
+  line-height: 1.3;
 }
 
 h2 {
