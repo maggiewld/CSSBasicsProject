@@ -25,13 +25,17 @@ h1 {
 }
 
 h2 {
-  font-size: 53px;
+  font-size: 3.3125em; /* 53px/16px */
   font-weight: normal;
+  line-height: 1,1;
+  margin-bottom: .5em; /* 26px, desired value divided by the px font value of heading. */
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.25em; /*20px/16px */
   color: #48525c;
+  line-height: 1.2;
+  margin-bottom: 1.7em; /* 34px */
 }
 
 /* Class Selectors */
@@ -48,6 +52,7 @@ h3 {
 .primary-content,
 .secondary-content {
   width: 60%;
+  margin: auto;
 }
 
 .primary-content,
@@ -67,12 +72,13 @@ h3 {
   /* padding: top/bottom, left/right;
   padding: top, left/right, bottom;
   padding: top, right, bottom, left */
-
   /* border-width: 10px 20px;
     border-style: solid dotted;
     border-color: red #ffa949;
   Border properties can have multiple values applied */
   border-top: 10px solid #ffa949;
+
+  margin: 105px 0 60px;
 }
 
 /* Pseudo-class Selectors */
