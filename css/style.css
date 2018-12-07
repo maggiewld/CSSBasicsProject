@@ -4,7 +4,8 @@
 body {
   color: #878787;
   margin: 0;
-  font-size: 1em;
+  font-size: 1em; /* 16px */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* font stack, backup fonts for when user doesn't have a font installed. */
 }
 
 ol li {
@@ -15,11 +16,14 @@ ol li {
 
 h1 {
   font-size: 5.625em; /* 90px/16px */
-  color: white;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 h2 {
   font-size: 53px;
+  font-weight: normal;
 }
 
 h3 {
@@ -43,7 +47,8 @@ h3 {
   width: 60%;
 }
 
-.primary-content {
+.primary-content,
+.main-header {
   text-align: center;
 }
 
@@ -54,6 +59,7 @@ h3 {
 /* Pseudo-class Selectors */
 a:link {
   color: rgb(255, 169, 73);
+  text-decoration: none; /* link default has underline, this removes */
 }
 
 a:visited {
