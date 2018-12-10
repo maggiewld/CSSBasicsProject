@@ -173,3 +173,11 @@ a:active {
 .tips {
   float: right;
 }
+
+/* Float Clearfix ------------------------------------- */
+
+.group:after { /* can use any class name, but .group is typically used for clearfix */
+  content: "";
+  display: table;
+  clear: both;
+}
