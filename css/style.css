@@ -1,5 +1,5 @@
 
-/* Base Styles */
+/* Base Styles ---------------------------------------- */
 
 * { /* Universal selector */
   box-sizing: border-box;
@@ -41,7 +41,7 @@ img {
   margin-bottom: 20px;
 }
 
-/* Pseudo-class Selectors */
+/* Pseudo-class Selectors ----------------------------- */
 
 a:link {
   color: rgb(255, 169, 73);
@@ -65,12 +65,21 @@ a:active {
   background-color: orange;
 } */
 
-/* Main Styles */
+/* Main Styles ---------------------------------------- */
 
 .main-header {
-  background-color: #ffa949; /* hex value #RRGGBB */
   padding-top: 170px;
   height: 850px;
+
+  /*
+  background-color: #ffa949; [hex value #RRGGBB] background-image: url('../img/mountains.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+    [background-position: <horizontal> <vertical/no value=center by default>; can also use % or px]
+  */
+
+  background: #ffa949 url('../img/mountains.jpg') no-repeat center;
+  background-size: cover;
 }
 
 .title {
@@ -118,7 +127,7 @@ a:active {
   border-top: 2px solid #dfe2e6;
 }
 
-/* Layout Styles */
+/* Layout Styles -------------------------------------- */
 
 .primary-content,
 .secondary-content {
