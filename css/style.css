@@ -151,8 +151,25 @@ a:active {
   Border properties can have multiple values applied */
   border-top: 10px solid #ffa949;
   margin: 105px 0 60px;
+  background: #434a52 url('../img/bear.jpg') no-repeat center;
+  background-size: cover;
 }
 
 .arrow {
   width: 50px;
+}
+
+/* Floated Columns ------------------------------------ */
+
+.resorts,
+.tips {
+  width: 46.5%;
+}
+
+.resorts {
+  float: left;
+}
+
+.tips {
+  float: right;
 }
