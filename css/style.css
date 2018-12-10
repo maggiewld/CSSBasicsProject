@@ -1,5 +1,5 @@
 
-/* Type Selectors */
+/* Base Styles */
 
 body {
   color: #878787;
@@ -8,12 +8,6 @@ body {
   /* font property to combine weight, size, line height, font stack.
   font stack: backup fonts for when user doesn't have a font installed.
   line height: unitless value, proportional to font size. 1.5x font size. */
-}
-
-ol li {
-  background-color: tomato;
-  color: white;
-  margin-bottom: 5px;
 }
 
 h1 {
@@ -38,50 +32,8 @@ h3 {
   margin-bottom: 1.7em; /* 34px */
 }
 
-/* Class Selectors */
-
-.main-header {
-  background-color: #ffa949; /* hex value #RRGGBB */
-}
-
-.title {
-  color: white;
-  font-size: 1.625em; /* to work out how many 'em' from px, divide value by relative font size, here is based on body size 1em(/default 16px) 26px/16px */
-}
-
-.primary-content,
-.secondary-content {
-  width: 60%;
-  margin: auto;
-}
-
-.primary-content,
-.main-header {
-  text-align: center;
-}
-
-.t-border {
-  border-top: 2px solid lightgrey;
-}
-
-.wildlife {
-  color: white;
-  background-color: #434a52;
-
-  padding: 18% 24%;
-  /* padding: top/bottom, left/right;
-  padding: top, left/right, bottom;
-  padding: top, right, bottom, left */
-  /* border-width: 10px 20px;
-    border-style: solid dotted;
-    border-color: red #ffa949;
-  Border properties can have multiple values applied */
-  border-top: 10px solid #ffa949;
-
-  margin: 105px 0 60px;
-}
-
 /* Pseudo-class Selectors */
+
 a:link {
   color: rgb(255, 169, 73);
   text-decoration: none; /* link default has underline, this removes */
@@ -99,15 +51,73 @@ a:active {
   color: lightcoral;
 }
 
-:focus {
+/* :focus {
   color: white;
   background-color: orange;
+} */
+
+/* Main Styles */
+
+.main-header {
+  background-color: #ffa949; /* hex value #RRGGBB */
 }
 
-/* ID selectors */
+.title {
+  color: white;
+  font-size: 1.625em; /* to work out how many 'em' from px, divide value by relative font size, here is based on body size 1em(/default 16px) 26px/16px */
+}
 
-#main-footer {
+.intro {
+  font-size: 1.25em; /* 26px/16px */
+  line-height: 1.6;
+}
+
+.primary-content,
+.main-header,
+.main-footer {
+  text-align: center;
+}
+
+.primary-content {
+  padding-top: 25px;
+  padding-bottom: 95px;
+}
+
+.secondary-content {
+  padding-top: 80px;
+  padding-bottom: 70px;
+  border-bottom: 2px solid #dfe2e6;
+}
+
+.main-footer {
   padding-top: 60px;
   padding-bottom: 60px;
   border-bottom: 10px solid #ffa949;
+}
+
+.t-border {
+  border-top: 2px solid lightgrey;
+}
+
+/* Layout Styles */
+
+.primary-content,
+.secondary-content {
+  width: 60%;
+  margin: auto;
+}
+
+.wildlife {
+  color: white;
+  background-color: #434a52;
+  padding: 18% 24%;
+  /* padding: top/bottom, left/right;
+  padding: top, left/right, bottom;
+  padding: top, right, bottom, left */
+  /* border-width: 10px 20px;
+    border-style: solid dotted;
+    border-color: red #ffa949;
+  Border properties can have multiple values applied */
+  border-top: 10px solid #ffa949;
+  margin: 105px 0 60px;
 }
