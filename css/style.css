@@ -89,6 +89,14 @@ a:active {
   border-bottom: 2px solid #dfe2e6;
 }
 
+.callout {
+  font-size: 1.25em;
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
 .main-footer {
   padding-top: 60px;
   padding-bottom: 60px;
