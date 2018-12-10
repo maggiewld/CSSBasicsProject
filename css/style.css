@@ -41,6 +41,16 @@ img {
   margin-bottom: 20px;
 }
 
+ul,
+ol {
+  /* padding-left: 0; [Removes list default left indent padding; Older version of IE defines as margin */
+  margin: 30px 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
 /* Pseudo-class Selectors ----------------------------- */
 
 a:link {
@@ -167,11 +177,11 @@ a:active {
 }
 
 .resorts {
-  float: left;
+  float: right;
 }
 
 .tips {
-  float: right;
+  float: left;
 }
 
 /* Float Clearfix ------------------------------------- */
