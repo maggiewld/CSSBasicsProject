@@ -40,6 +40,7 @@ h3 {
 img {
   max-width: 100%;
   margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 ul,
@@ -165,6 +166,7 @@ a:active {
   background: #434a52 url('../img/bear.jpg') no-repeat center;
   background-size: cover;
   box-shadow: inset 0 0 50px 10px rgba(0, 0, 0, 1); /* 4th value: <spread value>; <inset> must first first or last */
+  border-radius: 50px 10px; /* <top left(+bottom right)> <top right(+bottom left)> */
 }
 
 .arrow {
