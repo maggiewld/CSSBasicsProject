@@ -92,6 +92,8 @@ a:active {
 
   background: #ffa949 url('../img/mountains.jpg') no-repeat center;
   background-size: cover;
+
+  background-image: radial-gradient(circle at top, #ffa949, firebrick); /* (<position/direction> <colour1> <colour2>) */
 }
 
 .title {
